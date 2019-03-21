@@ -1,0 +1,72 @@
+<script type='text/javascript'>
+ $(function() {
+   Dashing.gridsterLayout('[{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":3,"size_x":1,"size_y":1},{"col":3,"row":4,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":1,"row":4,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":4,"row":4,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":4,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":2,"size_y":1}]')
+ });
+ </script>
+
+<% content_for :title do %>CO2 emission dashboard<% end %>
+<!-- TRANSPORT_OPTIONS = %W(walking bicycling subway bus motor-cycle car-small car-medium) -->
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="walking" data-view="Meter" data-title="Walking" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="bicycling" data-view="Meter" data-title="Bicycling" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="subway" data-view="Meter" data-title="Subway" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="bus" data-view="Meter" data-title="Bus" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="motor-cycle" data-view="Meter" data-title="Motor Cycle" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="car-small" data-view="Meter" data-title="Car Small" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="car-medium" data-view="Meter" data-title="Car Medium" data-height="150" data-width="150" data-min="0" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="walking-duration" data-view="Text" data-title="Walking" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="bicycling-duration" data-view="Text" data-title="Bicycling" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="subway-duration" data-view="Text" data-title="Subway" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="bus-duration" data-view="Text" data-title="Bus" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="motor-cycle-duration" data-view="Text" data-title="Motor Cycle" data-height="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="car-small-duration" data-view="Text" data-title="Car Small" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="car-medium-duration" data-view="Text" data-title="Car Medium" data-height="150" data-width="150"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="overview" data-view="List" data-title="Overview" data-unordered="true"></div>
+    </li>
+  </ul>
+  <!-- <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center> -->
+</div>
